@@ -8,10 +8,6 @@ public class Main {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 JFrame frame = new ventanaMain();
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setTitle("Speedrun");
-                frame.setSize(680, 350);
-                frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
             }
         });
@@ -60,8 +56,8 @@ public class Main {
         public ventanaMain() {
             setTitle("Carrera Épica");
             JLabel personaje1, personaje2, personaje3, personaje1_pos, personaje2_pos, personaje3_pos;
-            setSize(800, 600); // Ajustado para espacio suficiente
-
+            setSize(680, 400);
+            setLocationRelativeTo(null);
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             JPanel panel = new JPanel();
             panel.setLayout(null);
